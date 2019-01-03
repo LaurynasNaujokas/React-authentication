@@ -11,12 +11,10 @@ import Login from './components/login';
 import Home from './components/home';
 
 
-
-//Next import Router
-
 class App extends Component {
   render() {
     return (
+    <Provider store = { store }>
       <Router>
         <div>
           <Navbar />
@@ -27,7 +25,8 @@ class App extends Component {
             <Route exact path="/login" component= { Login } />
           </div>
         </div>
-      </Router>  
+      </Router>
+    </Provider>  
     );
   }
 }
