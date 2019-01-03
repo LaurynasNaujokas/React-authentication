@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import {Provider} from 'react-redux';
+import store from './store';
 
 import Navbar from './components/navbar';
 import Register from './components/register';
 import Login from './components/login';
 import Home from './components/home';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 
 //Next import Router
